@@ -25,3 +25,5 @@
 - To open the secrets file **kubectl get secrets argocd-initial-admin-secret -o yaml -n argocd**
 - To decode the pwd **echo "" | base64 -d**
 - To run the argocd ui **kubectl port-forward svc/argocd-server -n argocd 8080:80**
+- To deploy manually **kubectl apply -f .\example\application.yaml**
+- to see the pods in local after we synced manually in argocd **kubectl get pods -n dev**
