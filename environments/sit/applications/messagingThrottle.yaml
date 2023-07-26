@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/DineshGon/argocd.git
     targetRevision: Feature_Multiple_Components
-    path: environments/sit/messagingThrottle
+    path: environments/sit/messagingthrottle
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:
