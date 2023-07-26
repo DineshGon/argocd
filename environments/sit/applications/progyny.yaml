@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: myapp
+  name: specialty-components 
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/DineshGon/argocd.git
     targetRevision: HEAD
-    path: 01argocd
+    path: environments/sit/progyny
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:

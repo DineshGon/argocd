@@ -40,3 +40,7 @@
 
 # upgrade(bash file)
 - When the CI pipeline runs, it automatically generates Docker images, updates to the newer image version, and makes the corresponding version changes in the YAML file. These changes will trigger ArgoCD to initiate the deployment process."
+
+
+# deploy multiple components
+- it allows us to deploy multiple components for different envs.
