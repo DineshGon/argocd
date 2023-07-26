@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: specialty-components 
+  name: specialty-components-progyny
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/DineshGon/argocd.git
-    targetRevision: HEAD
+    targetRevision: Feature_Multiple_Components
     path: environments/sit/progyny
   destination:
     server: https://kubernetes.default.svc
