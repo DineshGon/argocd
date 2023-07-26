@@ -44,3 +44,8 @@
 
 # deploy multiple components
 - it allows us to deploy multiple components for different envs.
+
+# Helm Metrics Server
+- Add  **helm repo add metrics-server https://kubernetes-sigs.github.io/metrics-server/**
+- search that metrics server  that you added **helm search repo metrics-server**
+- save the default values **helm show values metrics-server/metrics-server --version 3.10.0 > metrics-server-defaults.yaml**
